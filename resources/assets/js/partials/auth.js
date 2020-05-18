@@ -5,6 +5,7 @@ export function registerUser(credentials){
             res(response.data);
         })
         .catch(err => {
+            console.log(err);
             rej('An error occured.. try again later.')
         })
     })

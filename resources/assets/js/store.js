@@ -1,4 +1,4 @@
-import {getLoggedinUser} from './helpers/auth';
+import {getLoggedinUser} from './partials/auth';
 
 const user = getLoggedinUser();
 
@@ -25,10 +25,10 @@ export default {
             return state.auth_error;
         },
         regError(state){
-            return state.reg_error; 
+            return state.reg_error;
         },
         registeredUser(state){
-            return state.registeredUser; 
+            return state.registeredUser;
         },
     },
     mutations: {
@@ -45,7 +45,7 @@ export default {
             localStorage.setItem("user", JSON.stringify(state.currentUser));
         },
         loginFailed(state, payload){
-            state.loading = false; 
+            state.loading = false;
             state.auth_error = payload.error;
         },
         logout(state){

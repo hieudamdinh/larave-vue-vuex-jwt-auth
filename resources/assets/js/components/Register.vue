@@ -3,7 +3,7 @@
         <div class="col-md-6">
             <div class="card">
                 <div class="card-header">
-                   <h3>Register</h3> 
+                   <h3>Register</h3>
                 </div>
                 <div class="card-body">
                     <form @submit.prevent="register">
@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import {registerUser} from '../helpers/auth';
+import {registerUser} from '../partials/auth';
 export default {
     data(){
         return {
